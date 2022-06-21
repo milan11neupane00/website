@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
+
+:root {
+    --blue: #00b4d8;
+    --light: #90e0ef;
+    --dark: #03045e;
+    --font: #f9F7F0;
+
+}
+/* common CSS */
+html,
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Arvo', serif;
+}
+
+/* header */
+header{
+
+    background: linear-gradient(to right,#18B7BE, #178CA4,);
+}
+.navbar-brand{
+    font-size: 1.5rem;
+}
+
+.nav-link{
+    font-size: 1.2rem;
+}
+
+/* home */
+#home{
+    width: 100%;
+    min-height: 100vh;
+}
+
+#particles-js{
+    width: 100%;
+    min-height: 100vh;
+    position: absolute;
+    top: 0;left: 0;
+    background: var(--blue);
+}
+#name{
+    margin-top: 16rem;
+    font-size: 4rem;
+    color: var(--font);
+    font-weight: bold;
+    text-align: center;
+}
+#tagline{
+    margin-top: 1rem;
+    font-size: 2rem;
+    color: var(--font);
+    text-align: center;
+}
+
+#know-more{
+    padding: .4rem 1rem;
+    max-width: 10rem;
+    color: var(--font);
+    margin: 0 auto;
+    display: block;
+    border: 2px solid var(--font);
+    border-radius: 1rem;
+    text-decoration: none;
+    text-align: center;
+}
+
+#know-more:hover{
+    text-decoration: none;
+}
+
+
+/* resume    */
+#resume{
+    width: 100%;
+    height: auto;
+    padding: 4rem 0;
+}
+#resume .card img{
+    height: 150px;
+}
+
+/* portfolio */
+#portfolio{
+    width: 100%;
+    height: auto;
+    padding: 4rem 0;
+}
+#portfolio img{
+    margin-top: 30px;
+    width: 100%;
+    height: 220px;
+}
+#portfolio .grid{
+    position: relative;
+    width: 100%;
+
+}
+#portfolio .grid .overlay{
+    position: absolute;
+    margin-top: 30px;
+    top: 0; bottom: 0;
+    right: 0; left: 0;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background: var(--blue);
+}
+#portfolio .grid:hover .overlay{
+    opacity: 1;
+}
+.text{
+    color: var(--font);
+    font-size: 1.7rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text a{
+    color: var(--font);
+    text-decoration: none;
+    
+}
+/* Gallery */
+#gallery{
+    width: 100%;
+    height: auto;
+    padding: 4rem 0;
+}
+#gallery img{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    width: 75%;
+    transform-origin: 0 0;
+    transition: transform .25s, visibility .25s ease-in;
+}
+#gallery img:hover{
+    transform: scale(1.1);
+}
+#gallery .grid{
+    position: relative;
+    width: 100%;
+}
+/* contact */
+#contact{
+    width: 100%;
+    height: auto;
+    padding: 4rem 0;
+}
+#contact form{
+    width: 100%;
+}
+#contact form input, #contact form textarea{
+    background: #e8edfc;
+}
+#contact form .submit-message{
+    margin-left: 15px;
+    margin-right: 15px;
+    background: #527cec;
+    color: var(--font);
+}
+
+/* footer */
+footer{
+    width: 100%;
+    height: auto;
+    padding: 2rem 0 4rem;
+    background: var(--light);
+}
+footer ul{
+    list-style: none;
+    padding-left: 0;
+}
+footer .go-to-top{
+    display: block;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+}
+footer .go-to-top:hover{
+    text-decoration: none;
+    color: var(--dark);
+}
+
+footer ul#s-media{
+    list-style: none;
+    padding-left: 0;
+    text-align: right;
+}
+footer ul#s-media li{
+    display:inline-block;
+    margin-left: 1rem;
+}
+footer ul#s-media a{
+    text-decoration: none;
+    color: #333;
+    font-size: 2rem;
+}
+
+footer ul#s-media a:hover{
+    text-decoration: none;
+    color:var(--dark);
+}
+footer a, footer p{
+    color: #333;
+}
+footer a:hover{
+    color: var(--dark);
+}
+footer p{
+    text-decoration: none;
+}
